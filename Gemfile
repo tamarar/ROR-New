@@ -45,8 +45,6 @@ gem 'jquery-rails'
 
 # Gemfile
 
-gem 'bootstrap-sass', '~> 3.1.1'
-
-
 gem 'faker'
 
+gem 'bootstrap-sass', '~> 3.1.1'
