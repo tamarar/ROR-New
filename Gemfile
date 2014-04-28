@@ -5,8 +5,12 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+#group :production do (replaced with what you see below)
+#  gem 'pg'
+#end
+
 group :production do
-  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development do
