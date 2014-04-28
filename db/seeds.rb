@@ -14,8 +14,8 @@ posts = Post.all
 # Create Comments
 100.times do
   Comment.create(
-    post: posts.sample,
-    body: Faker::Lorem.paragraph
+  post: post,
+  body: “Has anyone really been far even as decided to use even go want to do look more like?” 
   )
 end
 
