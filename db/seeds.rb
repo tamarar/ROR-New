@@ -5,8 +5,8 @@ require 'faker'
 # Create Posts
 50.times do
   Post.create(
-   title: "A Test Post",
-   body: "blah blah blah"
+    title:  Faker::Lorem.sentence,
+    body:   Faker::Lorem.paragraph
   )
 end
 posts = Post.all
@@ -14,8 +14,8 @@ posts = Post.all
 # Create Comments
 100.times do
   Comment.create(
-  post: post,
-  body: “Has anyone really been far even as decided to use even go want to do look more like?” 
+    post: posts.sample,
+    body: Faker::Lorem.paragraph
   )
 end
 

@@ -1,6 +1,7 @@
-# app/models/posts_controller.rb
+class PostsController < ApplicationController
 
-...
+  # CRUD methods from first CRUD checkpoint here.
+
   def edit
     @post = Post.find(params[:id])
   end
@@ -15,3 +16,4 @@
       render :edit
     end
   end
+end
