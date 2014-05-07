@@ -170,6 +170,7 @@ The default directory structure of a generated Ruby on Rails application:
   |   |-- environments
   |   |-- initializers
   |   `-- locales
+  |     |-- application.yml
   |-- db
   |-- doc
   |-- lib
