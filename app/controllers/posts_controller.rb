@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
 
   # CRUD methods from first CRUD checkpoint here.
+   def new
+    @post = Post.new
+    authorize @post
+  end
+
   def create
     @post = current_user.posts.build(params.require(:post).permit(:title, :body))
 
