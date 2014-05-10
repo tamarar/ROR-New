@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    authorize @posts
   end
 
   # CRUD methods from first CRUD checkpoint here.
