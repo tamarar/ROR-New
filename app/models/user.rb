@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   attr_accessible :name, :user_type, :email, :password, :password_confirmation, :remember_me, :role
   # attr_accessible :title, :body
   has_many :posts
-  mount_uploader :avatar, AvatarUploader # add this line.
+  mount_uploader :avatar, AvatarUploader
 
   def role?(base_role)
   	role == base_role.to_s
